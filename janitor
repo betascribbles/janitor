@@ -17,4 +17,8 @@ sudo apt-get clean
 sudo apt-get autoclean
 sudo apt-get autoremove
 
+echo
 
+echo -e "\e[1;32m \tCONGRATULATIONS!!\n \tYour system is clean and up-to-date\e[0m"
+
+echo
