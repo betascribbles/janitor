@@ -1,5 +1,5 @@
 #!/bin/env bash
-echo -e "\e[1;32m Step 1: Upgrading your distro\n==============================\e[0m"
+echo -e "\e[1;32m Step 1: Upgrading your distro\n===============================\e[0m"
 sudo apt-get dist-upgrade -y
 
 echo
@@ -16,6 +16,8 @@ echo
 
 echo -e "\e[1;32m Step 4: Repair broken dependencies\n====================================\e[0m"
 sudo apt-get check
+
+echo
 
 echo -e "\e[1;32m Step 5: Removing all the junk files\n=====================================\e[0m"
 sudo apt-get clean -y
