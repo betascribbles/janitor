@@ -5,6 +5,7 @@ This is a simple sript that lets you update, upgrade and clean your linux distro
 - Use a linux distro
 - Have `sudo` privileges
 - Locate the `$PATH` folder
+- Ensure the file `janitor` has excecutable permissions
 - Be patient!!
 
 ## How to use this script
