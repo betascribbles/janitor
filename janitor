@@ -1,0 +1,20 @@
+#!/bin/env bash
+echo -e "\e[1;32m Step 1: Updating packages\n===========================\e[0m"
+sudo apt-get update
+
+echo
+
+echo -e "\e[1;32m Step 2: Upgrading packages\n============================\e[0m"
+sudo apt-get upgrade -y
+
+echo
+
+echo -e "\e[1;32m Step 3: Repair broken dependencies\n==================================\e[0m"
+sudo apt-get check
+
+echo -e "\e[1;32m Step 4: Removing all the junk files\n=====================================\e[0m"
+sudo apt-get clean
+sudo apt-get autoclean
+sudo apt-get autoremove
+
+
