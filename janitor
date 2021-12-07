@@ -22,4 +22,8 @@ sudo apt-get clean -y
 sudo apt-get autoclean -y
 sudo apt-get autoremove -y
 
+echo
 
+echo -e "\e[1;32m \tCONGRATULATIONS!!\n \tYour system is clean and up-to-date\e[0m"
+
+echo

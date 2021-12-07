@@ -1,10 +1,11 @@
 # unix-janitor
-This is a simple sript that lets you update, upgrade and clean your linux distro with a single command that you can run anywhere in your terminal.
+This is a simple script that lets you update, upgrade and clean your linux distro with a single command that you can run anywhere in your terminal.
 
 ## Requirements to use this script
 - Use a linux distro
 - Have `sudo` privileges
 - Locate the `$PATH` folder
+- Ensure the file `janitor` has excecutable permission
 - Be patient!!
 
 ## How to use this script
