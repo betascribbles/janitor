@@ -1,15 +1,14 @@
 # unix-janitor
-This is a simple script that lets you update, upgrade and clean your linux distro with a single command that you can run anywhere in your terminal.
+This is a simple sript that lets you update, upgrade and clean your linux distro with a single command that you can run anywhere in your terminal.
 
 ## Requirements to use this script
-- Use a linux distro
-- Have `sudo` privileges
-- Locate the `$PATH` folder
-- Ensure the file `janitor` has excecutable permission
-- Be patient!!
+1. Use a linux distro
+2. Have `sudo` privileges
+3. Locate the `$PATH` folder
+4. Be patient!!
 
 ## How to use this script
-- Clone this repo to your local machine
+1. Clone this repo to your local machine
 ```
 beta@firdaus-pc:~$ git clone https://github.com/betascribbles/unix-janitor.git
 Cloning into 'unix-janitor'...
@@ -21,7 +20,7 @@ Unpacking objects: 100% (13/13), 2.97 KiB | 759.00 KiB/s, done.
 beta@firdaus-pc:~/Documents$ 
 ```
 
-- Change into the repo directory
+2. Change into the repo directory
 ```
 beta@firdaus-pc:~$ ls
 unix-janitor
@@ -29,7 +28,7 @@ beta@firdaus-pc:~$ cd unix-janitor/
 beta@firdaus-pc:~/unix-janitor$
 ```
 
-- Locate the file `janitor` and copy it to your $PATH folder. <b> This will prompt for the root password</b>
+3. Locate the file `janitor` and copy it to your $PATH folder. <b> This will prompt for the root password</b>
 ```
 beta@firdaus-pc:~/unix-janitor$ ls
 janitor  LICENSE  README.md
@@ -38,7 +37,7 @@ beta@firdaus-pc:~/unix-janitor$ sudo cp janitor /usr/bin/
 beta@firdaus-pc:~/unix-janitor$ 
 ```
 
-- You can update, upgrade and clean-up your linux distro but running `janitor` anywhere in your terminal
+4. You can update, upgrade and clean-up your linux distro but running `janitor` anywhere in your terminal
 ```
 beta@firdaus-pc:~/Documents/FIRDAUS/$ janitor
  Step 1: Updating packages
@@ -65,7 +64,7 @@ The following packages have been kept back:
 0 upgraded, 0 newly installed, 0 to remove and 19 not upgraded.
 
  Step 3: Repair broken dependencies
-==================================
+====================================
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -81,4 +80,4 @@ Reading state information... Done
 
 beta@firdaus-pc:~/Documents/FIRDAUS/ALX/unix-janitor$ 
 ```
-- Tada! Your operating system thanks you for cleaning it up!!
+Tada! Your operating system thanks you for cleaning it up!!
