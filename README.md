@@ -1,5 +1,5 @@
 # unix-janitor
-This is a simple sript that lets you update, upgrade and clean your linux distro with a single command that you can run anywhere in your terminal.
+This is a simple script that lets you update, upgrade and clean your linux distro and files system with a single command that you can run in any folder in your terminal.
 
 ## Requirements to use this script
 1. Use a linux distro
