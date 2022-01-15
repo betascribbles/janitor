@@ -1,4 +1,4 @@
-# unix-janitor
+# janitor
 This is a simple script that lets you update, upgrade and clean your linux distro and files system with a single command that you can run in any folder in your terminal.
 
 ## Requirements to use this script
@@ -37,43 +37,49 @@ beta@firdaus-pc:~/unix-janitor$ sudo cp janitor /usr/bin/
 beta@firdaus-pc:~/unix-janitor$ 
 ```
 
-4. You can update, upgrade and clean-up your linux distro but running `janitor` anywhere in your terminal
+4. You can update, upgrade and clean-up your linux distro but running `janitor` anywhere in your terminal.
 ```
-beta@firdaus-pc:~/Documents/FIRDAUS$ janitor
- Step 1: Upgrading your distro
-==============================
+beta@firdaus-pc:~/unix-janitor$ ./janitor 
+ Step 1: Updating|Upgrading packages
+=====================================
+[sudo] password for beta: 
+Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease    
+Hit:2 http://ppa.launchpad.net/apandada1/brightness-controller/ubuntu focal InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease                   
+Hit:4 https://download.docker.com/linux/ubuntu focal InRelease           
+Hit:5 http://apt.puppetlabs.com focal InRelease
+Reading package lists... Done
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
- Step 2: Updating packages
-===========================
-Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease 
-Hit:2 http://ke.archive.ubuntu.com/ubuntu focal InRelease             
-Hit:3 http://ke.archive.ubuntu.com/ubuntu focal-updates InRelease                                                                                    
-Hit:4 http://ke.archive.ubuntu.com/ubuntu focal-backports InRelease                                                                                  
-Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease                                                                       
-Hit:6 http://packages.microsoft.com/repos/code stable InRelease     
-Hit:7 http://security.ubuntu.com/ubuntu focal-security InRelease
-Reading package lists... Done
-
- Step 3: Upgrading packages
-============================
+ Step 3: Repair broken packages/dependencies
+=============================================
+Hit:1 http://ppa.launchpad.net/apandada1/brightness-controller/ubuntu focal InRelease
+Hit:2 https://brave-browser-apt-release.s3.brave.com stable InRelease    
+Hit:3 https://download.docker.com/linux/ubuntu focal InRelease           
+Hit:4 http://archive.ubuntu.com/ubuntu focal InRelease                   
+Hit:5 http://packages.microsoft.com/repos/code stable InRelease
+Fetched 336 kB in 5s (73.5 kB/s)
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-Calculating upgrade... Done
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-
- Step 4: Repair broken dependencies
-====================================
+10 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Hit:1 https://download.docker.com/linux/ubuntu focal InRelease           
+Hit:2 https://brave-browser-apt-release.s3.brave.com stable InRelease    
+Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease                   
+Hit:4 http://ppa.launchpad.net/apandada1/brightness-controller/ubuntu focal InRelease
+Hit:5 https://deb.nodesource.com/node_14.x focal InRelease
+Fetched 336 kB in 5s (71.3 kB/s)
+Reading package lists... Done
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
 
- Step 5: Removing all the junk files
+ Step 4: Removing all the junk files
 =====================================
 Reading package lists... Done
 Building dependency tree       
@@ -81,11 +87,28 @@ Reading state information... Done
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+
+ Last step: Updating packages
+==============================
+Hit:1 https://download.docker.com/linux/ubuntu focal InRelease           
+Hit:2 http://ppa.launchpad.net/apandada1/brightness-controller/ubuntu focal InRelease
+Hit:3 https://brave-browser-apt-release.s3.brave.com stable InRelease    
+Hit:4 https://dl.google.com/linux/chrome/deb stable InRelease            
+Hit:5 http://apt.puppet.com bionic InRelease
+Fetched 336 kB in 6s (53.5 kB/s)                                         
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
- 	CONGRATULATIONS!!
+ 	CONGRATULATIONS beta!!
  	Your system is clean and up-to-date
 
-beta@firdaus-pc:~/Documents/FIRDAUS$ 
+beta@firdaus-pc:~/unix-janitor$ 
 ```
 Tada! Your operating system thanks you for cleaning it up!!
+
+Feel free to contribute in making the script better.
