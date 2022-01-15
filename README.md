@@ -1,5 +1,7 @@
 # janitor
-### Shell Script: Automate Linux Updates, Upgrades and Clean-up Operations
+<img src="./header.png"/>
+
+### Automate Linux Updates, Upgrades and Clean-up Operations
 A janitor is one who keeps the premises of a building (such as an apartment or office) clean, tends the premises' system, and makes minor repairs. This is a simple shell script to automate all the cleaning, updating, and taking care of your system.
 
 ## Requirements to use this script
