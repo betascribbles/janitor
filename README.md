@@ -112,5 +112,6 @@ beta@firdaus-pc:~/unix-janitor$
 Tada! Your operating system thanks you for cleaning it up!!
 
 ----
-See [Wiki page](https://github.com/betascribbles/janitor/wiki/How-to-Take-Care-of-Your-LinuxOS-with-janitor) for more info about janitor
+See [Wiki page](https://github.com/betascribbles/janitor/wiki/How-to-Take-Care-of-Your-LinuxOS-with-janitor) for more info about janitor.
+
 Feel free to contribute in making the script better.
