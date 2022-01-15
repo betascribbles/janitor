@@ -77,7 +77,7 @@ Reading package lists... Done
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
  Step 4: Removing all the junk files
 =====================================
@@ -87,7 +87,7 @@ Reading state information... Done
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 
  Last step: Updating packages
 ==============================
