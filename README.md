@@ -1,5 +1,5 @@
 # janitor
-This is a simple script that lets you update, upgrade and clean your linux distro and files system with a single command that you can run in any folder in your terminal.
+A janitor is one who keeps the premises of a building (such as an apartment or office) clean, tends the premises' system, and makes minor repairs. This is a simple shell script to automate all the cleaning, updating, and taking care of your system.
 
 ## Requirements to use this script
 1. Use a linux distro
@@ -111,4 +111,6 @@ beta@firdaus-pc:~/unix-janitor$
 ```
 Tada! Your operating system thanks you for cleaning it up!!
 
+----
+See [Wiki page](https://github.com/betascribbles/janitor/wiki/How-to-Take-Care-of-Your-LinuxOS-with-janitor) for more info about janitor
 Feel free to contribute in making the script better.
