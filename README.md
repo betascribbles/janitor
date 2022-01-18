@@ -12,7 +12,7 @@ A janitor is one who keeps the premises of a building (such as an apartment or o
 
 ## How to use this script
 1. Clone this repo to your local machine
-```
+```ts
 beta@firdaus-pc:~$ git clone https://github.com/betascribbles/unix-janitor.git
 Cloning into 'unix-janitor'...
 remote: Enumerating objects: 13, done.
@@ -24,7 +24,7 @@ beta@firdaus-pc:~/Documents$
 ```
 
 2. Change into the repo directory
-```
+```ts
 beta@firdaus-pc:~$ ls
 unix-janitor
 beta@firdaus-pc:~$ cd unix-janitor/
@@ -32,7 +32,7 @@ beta@firdaus-pc:~/unix-janitor$
 ```
 
 3. Locate the file `janitor` and copy it to your $PATH folder. <b> This will prompt for the root password</b>
-```
+```ts
 beta@firdaus-pc:~/unix-janitor$ ls
 janitor  LICENSE  README.md
 beta@firdaus-pc:~/unix-janitor$ sudo cp janitor /usr/bin/
@@ -41,7 +41,7 @@ beta@firdaus-pc:~/unix-janitor$
 ```
 
 4. You can update, upgrade and clean-up your linux distro but running `janitor` anywhere in your terminal.
-```
+```ts
 beta@firdaus-pc:~/unix-janitor$ ./janitor 
  Step 1: Updating|Upgrading packages
 =====================================
