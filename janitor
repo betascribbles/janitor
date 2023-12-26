@@ -1,14 +1,23 @@
 #!/bin/env bash
 
+LOG_FILE="system_update.log"
+exec > >(tee -i $LOG_FILE)
+exec 2>&1
+
 echo -e "\e[1;32m Step 1: Updating|Upgrading packages\n=====================================\e[0m"
-sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y || { echo "Update failed"; exit 1; }
+
+echo
+
+echo -e "\e[1;32m Step 2: Installing Security Updates\n====================================\e[0m"
+sudo unattended-upgrade -d
 
 echo
 
 echo -e "\e[1;32m Step 3: Repair broken packages/dependencies\n=============================================\e[0m"
 sudo apt --fix-missing update -y
 sudo apt-get update -y
-sudo apt-get install -f -y
+sudo apt-get install -f -y || { echo "Package fix failed"; exit 1; }
 
 echo
 
@@ -19,8 +28,13 @@ sudo apt-get autoremove -y
 
 echo
 
+echo -e "\e[1;32m Step 5: Verifying package integrity\n=====================================\e[0m"
+sudo debsums --all | grep -v OK
+
+echo
+
 echo -e "\e[1;32m Last step: Updating packages\n==============================\e[0m"
-sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y || { echo "Final update failed"; exit 1; }
 
 echo
 
